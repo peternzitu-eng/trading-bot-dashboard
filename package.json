@@ -1,0 +1,16 @@
+{
+  "name": "trading-bot-backend",
+  "version": "1.0.0",
+  "description": "Trading automation backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "ccxt": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "yahoo-finance2": "^3.13.2"
+  }
+}
