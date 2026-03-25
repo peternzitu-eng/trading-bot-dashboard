@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: trading-bot-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: trading-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: DB_PATH
+        value: /data/trading_bot.db
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
